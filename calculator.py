@@ -17,6 +17,9 @@ def divide(a, b):
 
 
 def validate_number(value):
+    value = value.strip()
+    if not value:
+        raise ValueError("Input cannot be empty")
     try:
         return float(value)
     except ValueError:
@@ -24,6 +27,9 @@ def validate_number(value):
 
 
 def validate_operation(operation):
+    operation = operation.strip()
+    if not operation:
+        raise ValueError("Operation cannot be empty")
     valid_operations = ['+', '-', '*', '/']
     if operation not in valid_operations:
         raise ValueError(f"'{operation}' is not a supported operation. Use +, -, *, or /")
