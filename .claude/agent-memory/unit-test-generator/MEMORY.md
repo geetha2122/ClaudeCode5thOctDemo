@@ -1,0 +1,1 @@
+- [Calculator Test Strategy](calculator-test-strategy.md) — Comprehensive test patterns for arithmetic operations and validation functions
